@@ -1,7 +1,7 @@
 # URL-Shortener
 URL Shortener Backend Development Assignment 1
 
-- Git Repository link: https://github.com/PoojaDornal/issue-tracker1
+- Git Repository link: https://github.com/PoojaDornal/url-shortener
 - Hosted link: https://issuetracker-main-airs.onrender.com/
 
   ## Installation
