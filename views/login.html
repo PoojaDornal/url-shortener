@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      /* //display: flex; */
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      width: 23%;
+      margin-top: 8%;
+      margin-left: 35%;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    nav h1{
+      background-color: blueviolet;
+      color: white;
+      width: 100%;
+      height: 10%;
+      padding: 8px;
+      margin: 0;
+      font-size: x-large;
+      
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-bottom: 16px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+   <h1>URL Shortener  </h1> 
+  </nav>
+  <div class="container">
+    
+    <h1>Login</h1>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit" onclick="redirectToIndex()">Login</button>
+      <p>You don't have an account? <a href="./register">Register</a></p>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    // JavaScript code to redirect to the index page
+    function redirectToIndex() {
+      window.location.href = '/index';
+    }
+  </script>
+</body>
+</html>
